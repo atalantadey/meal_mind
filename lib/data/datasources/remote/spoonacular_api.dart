@@ -5,7 +5,6 @@ import '../../models/recipe_model.dart';
 class SpoonacularApi {
   final String baseUrl = "api.spoonacular.com";
 
-  // Search Recipes
   Future<List<RecipeModel>> getRecipes(String query, String diet) async {
     final uri = Uri.https(baseUrl, "/recipes/complexSearch", {
       "query": query,
